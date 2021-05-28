@@ -27,13 +27,17 @@ namespace EFSalesDb
             //context.Customers.Add(newCustomer);
             //var rowsAffected = context.SaveChanges();
 
-            var tql = context.Customers.Find(37);
-            tql.Name = "Total Quality Logistics";
-            var rowsAffected = context.SaveChanges();
+            //var tql = context.Customers.Find(37);
+            //tql.Name = "Total Quality Logistics";
+            //var rowsAffected = context.SaveChanges();
 
-            tql = context.Customers.Find(36);
-            context.Customers.Remove(tql);
-            rowsAffected = context.SaveChanges();
+            //tql = context.Customers.Find(36);
+            //context.Customers.Remove(tql);
+            //rowsAffected = context.SaveChanges();
+
+
+            var orders = context.Orders.ToList();
+
         }
     }
 }
