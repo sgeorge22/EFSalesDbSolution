@@ -36,6 +36,8 @@ namespace EFSalesDb.Models
 
             modelBuilder.Entity<Customer>(entity =>
             {
+                //entity.HasIndex(e => e.Code).IsUnique(true); need to use this when adding the Code column to the customer table
+
                 entity.Property(e => e.Active)
                     .IsRequired()
                     .HasDefaultValueSql("((1))");
